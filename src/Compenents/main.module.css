@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Update the header style */
+#header {
+  background-color: black;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navToggle {
+  display: none; /* Hide toggle button by default */
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+
+.navToggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: transform 0.3s ease;
+}
+
+.navLinks {
+  list-style-type: none;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navLinks li {
+  margin-left: 20px;
+}
+
+.navLinks li:first-child {
+  margin-left: 0; /* Remove margin for the first link */
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: large;
+  transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+  color: limegreen;
+}
+
+.active {
+  color: limegreen;
+}
+
+.name {
+  margin: 0;
+  margin-right: 5px;
+  color: white;
+  margin-top: 10px;
+  margin-left: 20px; /* Added margin-left for better alignment */
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Show toggle button for smaller screens */
+@media (max-width: 768px) {
+  .navToggle {
+    display: block; /* Show toggle button */
+  }
+
+  .navLinks {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust according to header height */
+    background-color: black;
+    width: 100%;
+    left: 0;
+    z-index: 999;
+  }
+
+  .navLinks li {
+    margin: 0;
+    padding: 10px 20px;
+    border-bottom: 1px solid white;
+  }
+
+  .showNav .navLinks {
+    display: flex; /* Show navigation links when toggled */
+  }
+
+  .navToggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navToggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navToggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* Style for about us */
+h1 {
+  margin-top: 3px;
+  color: #66bb00;
+}
+
+p {
+  margin-top: 15px;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  min-height: 100vh; /* Ensure full height for each section */
+}
+
+.description {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.imageContainer {
+  margin-top: 20px;
+}
+
+.profileImage {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Style the download button */
+button {
+  margin-top: 20px;
+  background-color: #77dd00;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+
+/* Style for skills portion */
+
+#skillsContainer {
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  min-height: 100vh; /* Ensure it takes the full height of the viewport */
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.heading h2 {
+  color: white;
+}
+
+.skillsList {
+  display: flex;
+  /* flex-wrap: wrap-reverse; */
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+
+.skillItem {
+  margin: 10px;
+  padding: 20px;
+  background-color: black;
+  border: 1px solid limegreen;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.skillItem img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; /* Ensure the image fits within the container */
+  background-color: black;
+  border-radius: 50%;
+}
+
+.skillItem p {
+  margin-top: 10px;
+  color: white;
+}
+
+.certificatesList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certificateItem {
+  margin: 20px;
+  padding: 20px;
+  background-color: black;
+  border: 1px solid limegreen;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.certificateItem img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Ensure the image fits within the container */
+  background-color: black;
+}
+
+.certificateItem p {
+  margin-top: 10px;
+  color: white;
+}
+
+
+/* Style for projects portion */
+
+/* Add styles for the project containers */
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+  
+  min-height: 100vh; /* Ensure full height for each section */
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.projectItem {
+  background-color: #111;
+  border: 1px solid #444;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid limegreen;
+  transition: transform 0.3s;
+}
+
+.projectItem:hover {
+  transform: scale(1.05);
+}
+
+.projectThumbnail {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.projectDetails {
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .projectGrid {
+    grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+  }
+}
+
+
+/* Style for contact me */
+
+#contactContainer {
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+  color: limegreen;
+  min-height: 85vh; /* Ensure it takes the full height of the viewport */
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.heading h2 {
+  color: limegreen;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: limegreen;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid limegreen;
+  border-radius: 4px;
+  background-color: black;
+  color: limegreen;
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: limegreen;
+}
+
+.formGroup textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* .submitButton:hover {
+  background-color: #ccff66;
+} */
+
+.contactDetails {
+  margin-top: 20px;
+}
+
+.contactDetails p {
+  margin: 5px 0;
+  color: limegreen;
+}
+
+.contactDetails strong {
+  color: limegreen;
+}
+
+
+
+/* Style for footer */
+.footer {
+  background-color: #000;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialIcons a {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.socialIcons a:hover {
+  color: #77dd00;
+}
+.copyright>p{
+  color: white;
+}
+#myproject {
+  background-color: #000;
+  color: #66bb00;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (min-width: 768px) {
+  .navLinks {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .aboutContainer {
+    flex-direction: row;
+  }
+
+  .description {
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  .profileImage {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  .heading {
+    margin-bottom: 80px;
+  }
+}
+
