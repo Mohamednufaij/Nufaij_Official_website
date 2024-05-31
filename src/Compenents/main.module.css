@@ -401,12 +401,15 @@ button:hover {
 
 
 /* Style for footer */
+
 .footer {
   background-color: #000;
   padding: 20px;
   display: flex;
+  flex-direction: row; /* Default to row layout */
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Ensure wrapping on small screens */
 }
 
 .socialIcons a {
@@ -419,9 +422,42 @@ button:hover {
 .socialIcons a:hover {
   color: #77dd00;
 }
-.copyright>p{
-  color: white;
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure wrapping on small screens */
 }
+
+.socialIcons a:last-child {
+  margin-right: 0; /* Remove margin from last icon */
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .socialIcons {
+    margin-bottom: 20px;
+  }
+}
+
+.copyright > p {
+  color: white;
+  text-align: center; /* Center align text on all screen sizes */
+}
+
+#myproject {
+  background-color: #000;
+  color: #66bb00;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+
+/* idk where this come from */
 #myproject {
   background-color: #000;
   color: #66bb00;
