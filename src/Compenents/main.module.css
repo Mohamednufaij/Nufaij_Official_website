@@ -502,3 +502,13 @@ button:hover {
   }
 }
 
+/* the last updated icon for mobile and email */
+.icon {
+  margin-left: 10px;
+  color:#007BFF;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: limegreen; /* Change color on hover */
+}

@@ -10,7 +10,9 @@ import js from './media/js.png';
 import boot from './media/bootstrap.jpg';
 import cert1 from './media/pyspiders certificate - 2024-05-09T111950.558.png'; // Example certificate image
 import cert2 from './media/WhatsApp Image 2024-05-26 at 11.47.58 AM.jpeg'; // Example certificate image
-
+import cert3 from './media/Python for Data analysis.png'
+import cert4 from "./media/SQL And Python.png"
+import cert5 from "./media/Data Analysis Using Excel.png"
 const Skills = () => {
   return (
     <div id={style.skillsContainer}>
@@ -33,6 +35,9 @@ const Skills = () => {
       <div className={style.certificatesList}>
         <CertificateItem title="Python Full stack Development -Django,React,SQL" imageUrl={cert1} />
         <CertificateItem title="Python for Data-Science" imageUrl={cert2} />
+        <CertificateItem title="Python for Data-Analysis" imageUrl={cert3} />
+        <CertificateItem title="Analytics using Python and SQL" imageUrl={cert4} />
+        <CertificateItem title=" Data-Analysis Using Excel" imageUrl={cert5} />
         {/* Add more CertificateItem components as needed */}
       </div>
     </div>
