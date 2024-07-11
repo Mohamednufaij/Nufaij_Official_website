@@ -229,6 +229,7 @@ button:hover {
 }
 
 /* Style for skills portion */
+
 #skillsContainer {
   padding: 20px;
   text-align: center;
@@ -239,8 +240,13 @@ button:hover {
 
 .heading {
   margin-bottom: 20px;
+  
 }
-
+/* heading style for skill component */
+#head{
+  color:#77dd00;
+  margin-top: 95px;
+}
 .heading h2 {
   color: white;
 }
@@ -248,7 +254,7 @@ button:hover {
 .skillsList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-bottom: 40px;
 }
 
@@ -297,7 +303,6 @@ button:hover {
   height: auto;
   object-fit: contain; /* Ensure the image fits within the container */
   background-color: black;
-  
 }
 
 .certificateItem p {
@@ -305,9 +310,39 @@ button:hover {
   color: white;
 }
 
-.virtualInternship>.certificateItem{
-  margin-left: 460px;
+.virtualInternship {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.virtualInternship > .certificateItem {
+  margin: 20px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .skillItem {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .virtualInternship,
+  .certificatesList {
+    align-items: center;
+  }
+
+  .virtualInternship > .certificateItem,
+  .certificatesList > .certificateItem {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+
 /* Style for projects portion */
 
 /* Add styles for the project containers */

@@ -18,7 +18,7 @@ const Skills = () => {
   return (
     <div id={style.skillsContainer}>
       <div className={style.heading}>
-        <h2>Let's Explore My Skills</h2>
+        <h2 id={style.head}>Let's Explore My Skills</h2>
       </div>
       <div className={style.skillsList}>
         <SkillItem name="Python" imageUrl={img1} />
@@ -31,7 +31,7 @@ const Skills = () => {
         <SkillItem name="Bootstrap" imageUrl={boot} />
       </div>
       <div className={style.heading}>
-        <h2>Certificates</h2>
+        <h2 id={style.head}>Certificates</h2>
       </div>
       <div className={style.certificatesList}>
         <CertificateItem title="Python Full stack Development -Django,React,SQL" imageUrl={cert1} />
@@ -41,7 +41,7 @@ const Skills = () => {
         <CertificateItem title="Data-Analysis Using Excel" imageUrl={cert5} />
       </div>
       <div className={style.heading}>
-        <h2>Virtual Internships</h2>
+        <h2 id={style.head}>Virtual Internships</h2>
       </div>
       <div className={style.virtualInternship}>
         <CertificateItem title="Software Engineering Internship" imageUrl={vicert2}/>
@@ -55,7 +55,7 @@ const SkillItem = ({ name, imageUrl }) => {
   return (
     <div className={style.skillItem}>
       <img src={imageUrl} alt={name} />
-      
+
       <p>{name}</p>
     </div>
   );
