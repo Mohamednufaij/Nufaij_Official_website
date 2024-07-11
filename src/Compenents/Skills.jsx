@@ -13,6 +13,7 @@ import cert3 from './media/Python for Data analysis.png';
 import cert4 from "./media/SQL And Python.png";
 import cert5 from "./media/Data Analysis Using Excel.png";
 import vicert1 from "./media/accenture.png"
+import vicert2 from "./media/Jp morgan Certificate.png"
 const Skills = () => {
   return (
     <div id={style.skillsContainer}>
@@ -43,7 +44,7 @@ const Skills = () => {
         <h2>Virtual Internships</h2>
       </div>
       <div className={style.virtualInternship}>
-        <CertificateItem title="Software Engineering Internship" imageUrl={vicert1}/>
+        <CertificateItem title="Software Engineering Internship" imageUrl={vicert2}/>
         <CertificateItem title="Data Analysis Internship" imageUrl={vicert1}/>
       </div>
     </div>
@@ -54,6 +55,7 @@ const SkillItem = ({ name, imageUrl }) => {
   return (
     <div className={style.skillItem}>
       <img src={imageUrl} alt={name} />
+      
       <p>{name}</p>
     </div>
   );
