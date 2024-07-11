@@ -2,7 +2,7 @@
 import img1 from './media/Screenshot (11).png'
 import img2 from "./media/Screenshot (20).png"
 import img3 from "./media/Screenshot (21).png"
-import img4 from "./media/Screenshot (22).png"
+import img4 from "./media/ReactCrud.png"
 import React from 'react';
 import style from './main.module.css';
 

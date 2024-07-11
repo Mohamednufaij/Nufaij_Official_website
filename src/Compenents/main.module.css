@@ -4,6 +4,54 @@
   box-sizing: border-box;
 }
 
+/* Layout.css */
+.layoutContainer {
+  position: relative;
+  min-height: 100vh;
+}
+
+.backgroundVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  visibility: visible; /* Ensure visibility */
+  display: block; /* Ensure display is block */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  
+}
+
+/* Ensure responsive visibility */
+@media (max-width: 768px) {
+  .backgroundVideo {
+    visibility: visible;
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  .backgroundVideo {
+    visibility: visible;
+    display: block;
+  }
+}
+
 /* Update the header style */
 #header {
   background-color: black;
@@ -181,7 +229,6 @@ button:hover {
 }
 
 /* Style for skills portion */
-
 #skillsContainer {
   padding: 20px;
   text-align: center;
@@ -250,6 +297,7 @@ button:hover {
   height: auto;
   object-fit: contain; /* Ensure the image fits within the container */
   background-color: black;
+  
 }
 
 .certificateItem p {
@@ -257,7 +305,9 @@ button:hover {
   color: white;
 }
 
-
+.virtualInternship>.certificateItem{
+  margin-left: 460px;
+}
 /* Style for projects portion */
 
 /* Add styles for the project containers */

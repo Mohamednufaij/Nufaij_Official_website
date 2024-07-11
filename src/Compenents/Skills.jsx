@@ -1,6 +1,5 @@
-import React from 'react';
-import style from './main.module.css'; // Import CSS module for styling
 import img1 from './media/opengraph-icon-200x200.png';
+import style from './main.module.css'
 import django from './media/opengraph-icon-200x200.png';
 import react from './media/React.webp';
 import sql from './media/sql7.jpg';
@@ -10,9 +9,10 @@ import js from './media/js.png';
 import boot from './media/bootstrap.jpg';
 import cert1 from './media/pyspiders certificate - 2024-05-09T111950.558.png'; // Example certificate image
 import cert2 from './media/WhatsApp Image 2024-05-26 at 11.47.58 AM.jpeg'; // Example certificate image
-import cert3 from './media/Python for Data analysis.png'
-import cert4 from "./media/SQL And Python.png"
-import cert5 from "./media/Data Analysis Using Excel.png"
+import cert3 from './media/Python for Data analysis.png';
+import cert4 from "./media/SQL And Python.png";
+import cert5 from "./media/Data Analysis Using Excel.png";
+import vicert1 from "./media/accenture.png"
 const Skills = () => {
   return (
     <div id={style.skillsContainer}>
@@ -37,8 +37,14 @@ const Skills = () => {
         <CertificateItem title="Python for Data-Science" imageUrl={cert2} />
         <CertificateItem title="Python for Data-Analysis" imageUrl={cert3} />
         <CertificateItem title="Analytics using Python and SQL" imageUrl={cert4} />
-        <CertificateItem title=" Data-Analysis Using Excel" imageUrl={cert5} />
-        {/* Add more CertificateItem components as needed */}
+        <CertificateItem title="Data-Analysis Using Excel" imageUrl={cert5} />
+      </div>
+      <div className={style.heading}>
+        <h2>Virtual Internships</h2>
+      </div>
+      <div className={style.virtualInternship}>
+        <CertificateItem title="Software Engineering Internship" imageUrl={vicert1}/>
+        <CertificateItem title="Data Analysis Internship" imageUrl={vicert1}/>
       </div>
     </div>
   );
@@ -63,3 +69,4 @@ const CertificateItem = ({ title, imageUrl }) => {
 };
 
 export default Skills;
+
