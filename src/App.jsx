@@ -13,7 +13,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Header />
-      <Layout>
+      {/* <Layout> */}
         
         <Routes>
           <Route element={<About />} path="/" />
@@ -22,7 +22,7 @@ const App = () => {
           <Route element={<Contactme />} path="/contact" />
         </Routes>
         
-      </Layout>
+      {/* </Layout> */}
       <Footer />
     </BrowserRouter>
   );

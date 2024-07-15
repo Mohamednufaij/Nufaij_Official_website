@@ -45,12 +45,20 @@
   }
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
+  .backgroundVideo {
+    visibility: visible;
+    display: block;
+  }
+} */
+/* Ensure the background video is visible on larger screens */
+@media (min-width: 1025px) {
   .backgroundVideo {
     visibility: visible;
     display: block;
   }
 }
+
 
 /* Update the header style */
 #header {
