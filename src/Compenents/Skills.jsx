@@ -11,6 +11,7 @@ import cert1 from './media/pyspiders certificate - 2024-05-09T111950.558.png'; /
 import cert2 from './media/WhatsApp Image 2024-05-26 at 11.47.58 AM.jpeg'; // Example certificate image
 import cert3 from './media/Python for Data analysis.png';
 import cert4 from "./media/SQL And Python.png";
+import cert6 from "./media/PowerBi certificate.png"
 import cert5 from "./media/Data Analysis Using Excel.png";
 import vicert1 from "./media/accenture.png"
 import vicert2 from "./media/Jp morgan Certificate.png"
@@ -39,6 +40,7 @@ const Skills = () => {
         <CertificateItem title="Python for Data-Analysis" imageUrl={cert3} />
         <CertificateItem title="Analytics using Python and SQL" imageUrl={cert4} />
         <CertificateItem title="Data-Analysis Using Excel" imageUrl={cert5} />
+        <CertificateItem  title="Data-Visualization Using PowerBi" imageUrl={cert6} />
       </div>
       <div className={style.heading}>
         <h2 id={style.head}>Virtual Internships</h2>
