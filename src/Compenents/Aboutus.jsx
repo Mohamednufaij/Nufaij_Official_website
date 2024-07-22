@@ -9,7 +9,7 @@ const About = () => {
   const handleDownloadResume = () => {
     // Replace 'path/to/your/resume.pdf' with the actual path to your resume file
     
-    const resumeUrl = `${process.env.PUBLIC_URL}/my_resume.pdf`;
+    const resumeUrl = `${process.env.PUBLIC_URL}/Mohamed_Nufaij.pdf`;
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.setAttribute('download', 'Mohamed_Nufaij_Resume.pdf'); // Set the downloaded file name

@@ -2,6 +2,7 @@
 import img1 from './media/Screenshot (11).png'
 import img2 from "./media/Screenshot (20).png"
 import img3 from "./media/Screenshot (21).png"
+import img5 from "./media/ChatApp.png"
 import img4 from "./media/ReactCrud.png"
 import React from 'react';
 import style from './main.module.css';
@@ -18,6 +19,11 @@ const projects = [
     siteUrl: 'https://github.com/Mohamednufaij/ECommerce-Store',
   },
   {
+    title: 'Chat App',
+    imageUrl: img5,
+    siteUrl: 'https://simple-chat-platform-front-end.vercel.app/',
+  },
+  {
     title: 'Netflix Clone',
     imageUrl: img1,
     siteUrl: 'https://github.com/Mohamednufaij/NetflixcloneReact',
@@ -27,6 +33,7 @@ const projects = [
     imageUrl: img4,
     siteUrl: 'https://github.com/Mohamednufaij/BasicCRUDreact',
   },
+  
 ];
 
 const Projects = () => {
