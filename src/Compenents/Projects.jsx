@@ -22,7 +22,7 @@ const projects = [
   {
     title: 'Video-Call-App',
     imageUrl: img6,
-    siteUrl: 'video-call-app-ashen-kappa.vercel.app',
+    siteUrl: 'https://video-call-app-ashen-kappa.vercel.app/',
   },
   {
     title: 'Chat App',
