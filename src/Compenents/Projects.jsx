@@ -4,6 +4,7 @@ import img2 from "./media/Screenshot (20).png"
 import img3 from "./media/Screenshot (21).png"
 import img5 from "./media/ChatApp.png"
 import img4 from "./media/ReactCrud.png"
+import img6 from "./media/Video call app.png"
 import React from 'react';
 import style from './main.module.css';
 
@@ -17,6 +18,11 @@ const projects = [
     title: 'Ecommerse-Store',
     imageUrl: img3,
     siteUrl: 'https://github.com/Mohamednufaij/ECommerce-Store',
+  },
+  {
+    title: 'Video-Call-App',
+    imageUrl: img6,
+    siteUrl: 'video-call-app-ashen-kappa.vercel.app',
   },
   {
     title: 'Chat App',
