@@ -13,6 +13,7 @@ import cert3 from './media/Python for Data analysis.png';
 import cert4 from "./media/SQL And Python.png";
 import cert6 from "./media/PowerBi certificate.png"
 import cert5 from "./media/Data Analysis Using Excel.png";
+import cert7 from "./media/hackerrank.png"
 import vicert1 from "./media/accenture.png"
 import vicert2 from "./media/Jp morgan Certificate.png"
 const Skills = () => {
@@ -36,6 +37,7 @@ const Skills = () => {
       </div>
       <div className={style.certificatesList}>
         <CertificateItem title="Python Full stack Development -Django,React,SQL" imageUrl={cert1} />
+        <CertificateItem title="Python (Basics)" imageUrl={cert7} />
         <CertificateItem title="Python for Data-Science" imageUrl={cert2} />
         <CertificateItem title="Python for Data-Analysis" imageUrl={cert3} />
         <CertificateItem title="Analytics using Python and SQL" imageUrl={cert4} />
