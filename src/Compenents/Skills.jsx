@@ -7,6 +7,7 @@ import html from './media/html3.png';
 import css from './media/css.png';
 import js from './media/js.png';
 import boot from './media/bootstrap.jpg';
+import Php from "./media/php3.png"
 import cert1 from './media/pyspiders certificate - 2024-05-09T111950.558.png'; // Example certificate image
 import cert2 from './media/WhatsApp Image 2024-05-26 at 11.47.58 AM.jpeg'; // Example certificate image
 import cert3 from './media/Python for Data analysis.png';
@@ -32,6 +33,7 @@ const Skills = () => {
         <SkillItem name="CSS3" imageUrl={css} />
         <SkillItem name="Javascript" imageUrl={js} />
         <SkillItem name="Bootstrap" imageUrl={boot} />
+        <SkillItem name="PHP" imageUrl={Php} />
       </div>
       <div className={style.heading}>
         <h2 id={style.head}>Certificates</h2>

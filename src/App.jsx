@@ -8,10 +8,12 @@ import Skills from './Compenents/Skills';
 import Projects from './Compenents/Projects';
 import Contactme from './Compenents/Contactme';
 import Footer from './Compenents/Footer';
+import CustomCursor from './Compenents/CustomCursor';
 
 const App = () => {
   return (
     <BrowserRouter>
+    <CustomCursor/>
       <Header />
       {/* <Layout> */}
         

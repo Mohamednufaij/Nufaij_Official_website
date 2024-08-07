@@ -605,3 +605,15 @@ button:hover {
 .icon:hover {
   color: limegreen; /* Change color on hover */
 }
+/* for that curve following mouse */
+/* main.module.css */
+.cursor {
+  width: 20px;
+  height: 20px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+

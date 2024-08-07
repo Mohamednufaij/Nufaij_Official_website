@@ -2,7 +2,7 @@
 import img1 from './media/Screenshot (11).png'
 import img2 from "./media/Screenshot (20).png"
 import img3 from "./media/Screenshot (21).png"
-import img5 from "./media/ChatApp.png"
+import img5 from "./media/ChatApp2.png"
 import img4 from "./media/ReactCrud.png"
 import img6 from "./media/Video call app.png"
 import React from 'react';

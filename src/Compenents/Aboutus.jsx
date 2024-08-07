@@ -17,9 +17,13 @@ const About = () => {
     link.click();
     document.body.removeChild(link);
   };
-
+  
+      
+          
   return (
     <div className={style.aboutContainer}>
+     
+      
       <div className={style.description}>
         <h2>Hello, i'm</h2>
         <h1>Mohamed Nufaij</h1>
